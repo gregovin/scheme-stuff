@@ -149,3 +149,12 @@
       (insert (- n 1) as (cons as ls) size)
       ))
   (mkSize (iter n as ls) size))
+(define (info)
+  (display "this is the info for the bitmath program \n
+ Bits are structured as lists like this \'(1 0 1 0 0 1), \n
+ but note that for integers the first bit in the list represents 2^0 and the second 2^1 and so on, so the bitstring above represents 37 \n
+ bit-add is a procedure that will add two bitstrings representing integers \n
+ bit-sub is a procedure that will subtract one bitstring representing an integer from another \n
+ bit-mult is a procedure that will multiply two bitstrings representing integers \n
+ bit-div is a procedure that will devide one bitstring by another
+ bit-mod is a procedure that will return the remainder of one bitstring devided by another"))
