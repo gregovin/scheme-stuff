@@ -67,3 +67,12 @@
                 0
                 )
                (list node-id1)))))
+(define (info)
+  (display "This program deals with networks of nodes\n")
+  (display "--(mk-connection l pointer) will specify a conection with length or cost l that points to a node with\n")
+  (display "      a unique id of pointer\n")
+  (display "--(mk-node Uid . connections) will make a node with the specified Uid and as many connections as desired\n")
+  (display "--(mk-graph . nodes) will make a graph with arbitrarily many connected nodes\n")
+  (display "--g is a graph with nodes 0-7 that are connected\n")
+  (display "--(shortest-path node-id1 node-id2 graph) returns a list of the length of the shortest path and a list\n")
+  (display "      of the ids of all the nodes the shortest path goes through"))
